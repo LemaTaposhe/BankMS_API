@@ -8,6 +8,7 @@ namespace BankMS_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class LoansController : ControllerBase
     {
         private readonly BankDbContext _context;
