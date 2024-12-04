@@ -8,6 +8,7 @@ namespace BankMS_API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [EnableCors("AllowOrigin")]
+     //[Authorize(Policy = "AdminOnly")]
     public class AccountsController : ControllerBase
     {
         private readonly BankDbContext _context;
